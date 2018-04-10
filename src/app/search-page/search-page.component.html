@@ -1,0 +1,8 @@
+<section class="main container col-sm-6 mx-auto d-flex align-items-center justify-content-center flex-wrap">
+  <span><h2>Model Twojego telefonu</h2></span>
+  <input (keyup)="search()" class="col-sm-8" type="text" placeholder="Szukaj" [(ngModel)]="toSearch"/>
+  <ul class="linkList">
+  <li *ngFor="let item of test">{{item.name}}</li>
+  </ul>
+  {{toSearch}}
+</section>

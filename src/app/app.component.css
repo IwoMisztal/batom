@@ -1,0 +1,33 @@
+.wrapper {
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.homePage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100vw;
+    background: #fff;
+    
+}
+
+.searchPage {
+    position: relative;
+    margin-top: 1000px;
+    z-index: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+
+.slideup {
+
+    transition: .5s;
+    transform: translateY(-100%);
+    background: red;
+    
+    }
