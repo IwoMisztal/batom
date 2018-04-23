@@ -1,0 +1,14 @@
+<section class="main container col-sm-6 mx-auto d-flex align-items-center justify-content-center flex-wrap">
+<!-- 
+  <span><h2>Model Twojego telefonu</h2></span>
+  <input (keyup)="search()" class="col-sm-8" type="text" placeholder="Szukaj" [(ngModel)]="toSearch"/>
+  <textarea #inp white-space="pre-wrap" type='text' id='fileInput'></textarea> 
+  <button (click)='csvJSON(inp.value)'>pt</button> -->
+
+  <ul *ngFor="let elem of output">
+  <li *ngIf="elem.TYTUL"><a (click)="goToUrl(elem.NR_AUKCJI)">{{elem.TYTUL}}</a></li>
+  </ul>
+ 
+
+  <input type="file" (change)="onFileSelected($event)">
+</section>

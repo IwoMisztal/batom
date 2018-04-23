@@ -1,0 +1,9 @@
+<div class="admin-wrapper container">
+  <ul *ngFor="let elem of elements">
+    <li *ngIf="elem.TYTUL"><a (click)="goToUrl(elem.NR_AUKCJI)"><h3>{{elem.TYTUL}}</h3></a></li>
+  </ul>
+   
+  <div class="text-center col-sm-6 mx-auto">
+    <input type="file" (change)="onFileSelected($event)">
+  </div>
+</div>
